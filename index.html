@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>
+               <h2>Weather App</h2>
+            </li>
+            <li>
+                <a href = "index.html">Index</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2 id = "cityinput">Please type in a city below!</h2>
+        <input class="citybar" type="text" id="city" placeholder="enter city name..."/>
+        <button class="refresh"id="lookupCity"><i class="fa fa-refresh"></i></button>
+        <br>
+        <h2>Or Enter Coordinates</h2>
+        <input class="coordbar" type="number" id="lat" placeholder="latitude..."/><input class="coordbar" type="number" id="lon" placeholder="longitude..."/>
+        <button class="refresh"id="lookupCoord"><i class="fa fa-refresh"></i></button>
+        <br>
+        <h2>Click either button to see the weather -></h2>
+    </div>
+    <br>
+    <div class="container">
+        <div class="displaybox">
+            <h2><i class="fa fa-map-marker"></i> <span id="location"></span></h2>
+            <h6 id="weather"></h6>
+            <h4><span id="temp"></span><sup>o</sup>F</h4>
+            <img id="icon" src="">
+        </div>
+    </div>
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
